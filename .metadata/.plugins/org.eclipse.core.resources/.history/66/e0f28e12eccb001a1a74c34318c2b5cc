@@ -1,0 +1,13 @@
+package bt1;
+
+public class Test {
+
+	public static void main(String[] args) {
+//		Component textComponent = new TextComponent("112.12");
+//		textComponent.validation();
+//		textComponent.setValidation(new Number());
+//		textComponent.validation();
+		String content = "11212.121212";
+		String output = content.split("\\.");
+	}
+}

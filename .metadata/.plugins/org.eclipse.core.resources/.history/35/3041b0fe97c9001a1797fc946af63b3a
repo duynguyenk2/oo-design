@@ -1,0 +1,19 @@
+package ex2;
+
+import java.util.Date;
+
+public abstract class ClockTime {
+
+	protected int hour;
+	protected int minute;
+	protected int second;
+	Date date = new Date();
+
+	public ClockTime(int hour, int minute, int second) {
+		super();
+		this.hour = hour;
+		this.minute = minute;
+		this.second = second;
+	}
+
+}

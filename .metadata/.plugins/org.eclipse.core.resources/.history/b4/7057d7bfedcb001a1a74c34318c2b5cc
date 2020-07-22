@@ -1,0 +1,9 @@
+package bt1;
+
+public class Number implements Validation {
+
+	@Override
+	public boolean validation(String content) {
+
+	}
+}

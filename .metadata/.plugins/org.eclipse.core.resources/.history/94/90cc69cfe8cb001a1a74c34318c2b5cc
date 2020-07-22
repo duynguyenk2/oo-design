@@ -1,0 +1,12 @@
+package bt1;
+
+public abstract class Component {
+
+	protected String content;
+
+	public Component(String content) {
+		super();
+		this.content = content;
+	}
+
+}

@@ -1,0 +1,15 @@
+package strategy;
+
+public class Test {
+	public static void main(String[] args) {
+		Duck duck = new MallardDuck();
+		duck.performFly();
+		duck.performQuack();
+
+		Duck duck2 = new MallardDuck();
+		duck2.setFlyBehavior(new FlyNoWay());
+		duck2.setQuackBehavior(new MuteQuack());
+		duck2.performFly();
+		duck2.performQuack();
+	}
+}

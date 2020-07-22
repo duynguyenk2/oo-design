@@ -1,0 +1,18 @@
+package bt1;
+
+public class Number implements Validation {
+
+	@Override
+	public boolean validation(String content) {
+		try {
+			Integer integer = Integer.parseInt(content);
+			if (integer instanceof Integer || content.contains(".")) {
+				System.out.println("Number");
+				return true;
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return false;
+	}
+}

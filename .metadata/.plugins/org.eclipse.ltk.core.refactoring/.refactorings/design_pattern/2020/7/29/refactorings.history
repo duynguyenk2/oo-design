@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;strategy.Squek.java&apos; to &apos;Squeak.java&apos;&#x0D;&#x0A;- Original project: &apos;design_pattern&apos;&#x0D;&#x0A;- Original element: &apos;strategy.Squek.java&apos;&#x0D;&#x0A;- Renamed element: &apos;strategy.Squeak.java&apos;" description="Rename compilation unit &apos;Squek.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;strategy{Squek.java" name="Squeak.java" references="false" stamp="1594910136534" version="1.0"/>
+</session>

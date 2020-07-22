@@ -1,0 +1,30 @@
+package ex2;
+
+import java.time.LocalTime;
+import java.util.Date;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public abstract class ClockTime {
+
+	protected int hour;
+	protected int minute;
+	protected int second;
+
+	public ClockTime() {
+		super();
+
+	}
+
+	public void setMeasur() throws InterruptedException {
+
+		LocalTime now = LocalTime.now();
+
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		ClockTime clockTime = new DigitalClock();
+		clockTime.setMeasur();
+	}
+
+}

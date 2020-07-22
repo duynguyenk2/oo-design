@@ -1,0 +1,9 @@
+package bt1;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Component textComponent = new TextComponent("asasasasa");
+		textComponent.validation();
+	}
+}

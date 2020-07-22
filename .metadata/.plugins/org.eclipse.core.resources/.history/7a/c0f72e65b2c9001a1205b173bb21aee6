@@ -1,0 +1,47 @@
+package ex2;
+
+import java.time.LocalTime;
+import java.util.Date;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public abstract class ClockTime {
+
+	protected int hour;
+	protected int minute;
+	protected int second;
+
+	public ClockTime() {
+		super();
+
+	}
+
+	@Override
+	public void run() {
+
+		while (true) {
+			LocalTime now = LocalTime.now();
+			this.hour = now.getHour();
+			this.minute = now.getMinute();
+			this.second = (int) now.getSecond();
+			System.out.println(hour + ":" + minute + ":" + second);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+	public void getCurrentTime() {
+		this.start();
+
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		ClockTime clockTime = new DigitalClock();
+		clockTime.getCurrentTime();
+	}
+
+}

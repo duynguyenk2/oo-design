@@ -1,0 +1,22 @@
+package bt1;
+
+public class Number implements Validation {
+
+	@Override
+	public boolean validation(String content) {
+		String[] chars = content.split("\\.");
+		String str = String.valueOf(chars);
+		try {
+			Integer integer = Integer.parseInt(str);
+			if (integer instanceof Integer || content.contains(".")) {
+
+			}
+			System.out.println("Number");
+			return true;
+		} catch (Exception e) {
+			System.out.println("Not number");
+			return false;
+		}
+
+	}
+}

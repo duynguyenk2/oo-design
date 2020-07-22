@@ -1,0 +1,36 @@
+package ex2;
+
+import java.time.LocalTime;
+import java.util.Date;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public abstract class ClockTime {
+
+	protected int hour;
+	protected int minute;
+	protected int second;
+
+	public ClockTime() {
+		super();
+
+	}
+
+	public synchronized void setMeasur() throws InterruptedException {
+		LocalTime now = LocalTime.now();
+		this.hour = now.getHour();
+		this.minute = now.getMinute();
+		this.second = (int) now.getSecond();
+		CompletableFuture.delayedExecutor(5, TimeUnit.SECONDS).execute(() -> {
+			// Your code here executes after 5 seconds!
+			this.second = this.second + 1;
+		});
+
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		ClockTime clockTime = new DigitalClock();
+		clockTime.setMeasur();
+	}
+
+}

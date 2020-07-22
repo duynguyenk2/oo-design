@@ -1,0 +1,7 @@
+package ex1;
+
+import java.util.Observable;
+
+public class EventSource extends Observable implements Runnable {
+
+}

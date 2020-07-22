@@ -1,0 +1,15 @@
+package ex1;
+
+import java.util.Observer;
+
+public class ResponseHandle2 implements Observer {
+
+	private String resp;
+
+	public void update(Observable obj, Object arg) {
+		if (arg instanceof String) {
+			resp = (String) arg;
+			System.out.println("\nReceived Response: " + resp);
+		}
+	}
+}

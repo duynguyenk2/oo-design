@@ -1,0 +1,37 @@
+package ex2;
+
+import java.time.LocalTime;
+import java.util.Date;
+
+public abstract class ClockTime {
+
+	protected int hour;
+	protected int minute;
+	protected int second;
+
+	public ClockTime() {
+		super();
+
+	}
+
+	public void setMeasur() {
+		LocalTime now = LocalTime.now();
+		this.hour = now.getHour();
+		this.minute = now.getMinute();
+		this.second = (int) now.getSecond();
+		System.out.println(this.hour + ":" + this.minute + ":" + this.second);
+		while ((int) this.second < (int) now.getSecond()) {
+			this.hour = this.hour + 1;
+			this.minute = this.minute + 1;
+			this.second = this.second + 1;
+			System.out.println(this.hour + ":" + this.minute + ":" + this.second);
+		}
+
+	}
+
+	public static void main(String[] args) {
+		ClockTime clockTime = new DigitalClock();
+		clockTime.setMeasur();
+	}
+
+}

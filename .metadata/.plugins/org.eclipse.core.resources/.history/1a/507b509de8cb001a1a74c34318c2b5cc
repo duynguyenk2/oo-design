@@ -1,0 +1,15 @@
+package bt1;
+
+public class Number implements Validation {
+
+	@Override
+	public boolean validation(String content) {
+		try {
+			Integer ints = Integer.parseInt(content);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return false;
+	}
+}

@@ -1,0 +1,16 @@
+package ex2;
+
+import sun.jvm.hotspot.oops.CheckedExceptionElement;
+
+public class LearnThread extends Thread {
+
+	@Override
+	public void run() {
+
+		for (int i = 0; i < 10; i++) {
+			System.out.println(i);
+			Thread.sleep(1000);
+		}
+	}
+
+}

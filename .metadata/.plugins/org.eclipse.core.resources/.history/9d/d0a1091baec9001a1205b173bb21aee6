@@ -1,0 +1,21 @@
+package ex2;
+
+import java.util.Date;
+
+public abstract class ClockTime implements Subject {
+
+	protected int hour;
+	protected int minute;
+	protected int second;
+
+	public ClockTime() {
+		super();
+
+	}
+
+	public void setMeasur() {
+		Date date = new Date();
+		this.hour = date.getHours();
+	}
+
+}
