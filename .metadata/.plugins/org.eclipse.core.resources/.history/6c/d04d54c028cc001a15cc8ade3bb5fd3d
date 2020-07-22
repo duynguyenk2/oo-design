@@ -1,0 +1,10 @@
+package bt5;
+
+public class Test {
+
+	Tour domesticTour = new DomesticTour("PThiet", "Phan Thiet - Mui Ne", 3, 550000);
+	Tour domesticTour2 = new DomesticTour("NTrang", "Nha Trang", 4, 900000);
+
+	Tour domesticTour3 = new DomesticTour("DLNT", "Da Lat - Nha Trang", 4, 1250000);
+	Tour overseasTour = new OverSeasTour("Thai", "HCM - Bangkok", 5, 3600000, "Thailand", 500000);
+}

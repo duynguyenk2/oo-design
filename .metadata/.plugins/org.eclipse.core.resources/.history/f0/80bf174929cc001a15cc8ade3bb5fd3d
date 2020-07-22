@@ -1,0 +1,12 @@
+package bt5;
+
+public abstract class TourDecorator extends Tour {
+
+	Tour tour;
+
+	public TourDecorator(String name, String description, long days, double basePrice) {
+		super(name, description, days, basePrice);
+		// TODO Auto-generated constructor stub
+	}
+
+}

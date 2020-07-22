@@ -1,0 +1,18 @@
+package bt5;
+
+public abstract class Tour {
+
+	protected String name;
+	protected String description;
+	protected long days;
+	protected double basePrice;
+
+	public Tour(String name, String description, long days, double basePrice) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.days = days;
+		this.basePrice = basePrice;
+	}
+
+}

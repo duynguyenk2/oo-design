@@ -1,0 +1,10 @@
+package bt5;
+
+public abstract class Tour {
+
+	protected  String name;
+	protected String description;
+	protected long days;
+	protected double basePrice;
+	
+}
